@@ -1,0 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+*{
+  font-family: 'Lato', sans-serif !important;
+}
+
+.box{
+  border: 1px solid black;
+  padding: 9px;
+}
+
