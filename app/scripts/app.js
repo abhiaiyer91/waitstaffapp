@@ -1,6 +1,7 @@
+(function(window){
 'use strict';
 
-angular
+window.Abhi = angular
   .module('waitstaffApp', [
     'ngRoute'
   ])
@@ -14,3 +15,10 @@ angular
         redirectTo: '/'
       });
   });
+
+
+
+}(window));
+
+
+

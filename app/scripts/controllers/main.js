@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('waitstaffApp')
-  .controller('MainCtrl', function ($scope) {
+window.Abhi
+  .controller('MainCtrl', ['$scope', function ($scope) {
 
   	$scope.collections = [];
 
   	$scope.tips = [0];
 
 
-  	$scope.submit = function (){
+  	$scope.submit = function(){
   		$scope.collections.push($scope.meal);
   		$scope.tips.push($scope.meal.tip);
   		console.log($scope.tips);
@@ -18,12 +18,17 @@ angular.module('waitstaffApp')
 		$scope.tipaverage = $scope.totaltips / ($scope.tips.length-1) ;
   	}
 
-  	$scope.reset = function (){
+  	$scope.reset = function(){
   		$scope.collections = [];
   		$scope.tips = [];
   		$scope.meal = {};
   		$scope.totaltips = 0;
-  		
+      $scope.tipaverage = 0;
+
+  	}
+
+  	$scope.cancel = function(){
+  		$scope.meal = {};
   	}
 
   	$scope.compute = function(p,t){
@@ -36,4 +41,4 @@ angular.module('waitstaffApp')
 
 
 
-  });
+  }]);
