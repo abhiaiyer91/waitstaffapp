@@ -1,0 +1,15 @@
+<section class="box container">
+  <div class="row">
+  	<h2 class="text-center">My Earnings Info</h2>
+
+  	<div class="col-sm-offset-2">
+  		<div><h2>Tip Total: {{ waitstaff.meal.tipTotal | currency }}</h2></div>
+  		<div><h2>Meal Count: {{ waitstaff.meal.mealCount | number }}</h2></div>
+  		<div><h2>Average Tip Per Meal: {{ waitstaff.meal.averageTip | currency }}</h2></div>
+  	</div>
+  </div>
+  <br/>
+  <div class="text-center">
+  	<button type="submit" class="btn btn-lg btn-warning" ng-click="resetAll()">Reset</button>
+  </div>
+</sectoon>
